@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <AnchorPane prefHeight="48.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="330.0" layoutY="16.0" prefHeight="31.0" prefWidth="420.0" text="Розв'язання трансцендентних рівнянь">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="174.0" layoutY="96.0" prefHeight="19.0" prefWidth="61.0" text="SIN(X) +" />
+      <Label layoutX="249.0" layoutY="95.0" prefHeight="23.0" prefWidth="51.0" text="COS(X) +" />
+      <Label layoutX="331.0" layoutY="87.0" prefHeight="39.0" prefWidth="38.0" text="LG(x)+" />
+      <TextField fx:id="koefField1_1" layoutX="146.0" layoutY="93.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField2_1" layoutX="219.0" layoutY="93.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField3_1" layoutX="300.0" layoutY="93.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField4_1" layoutX="376.0" layoutY="93.0" prefHeight="25.0" prefWidth="28.0" />
+      <Label layoutX="408.0" layoutY="89.0" prefHeight="31.0" prefWidth="73.0" text="TG(X) +" />
+      <TextField fx:id="koefField5_1" layoutX="462.0" layoutY="94.0" prefHeight="25.0" prefWidth="28.0" />
+      <Label layoutX="505.0" layoutY="98.0" prefHeight="17.0" prefWidth="28.0" text="= 0 ;" />
+      <Group layoutX="52.0" layoutY="98.0">
+         <children>
+            <RadioButton fx:id="radioButtom1" mnemonicParsing="false" text="№ 1 шаблон" />
+            <RadioButton fx:id="radioButtom2" layoutY="35.0" mnemonicParsing="false" text="№ 2 шаблон" />
+            <RadioButton fx:id="radioButton3" layoutY="69.0" mnemonicParsing="false" text="№ 3 шаблон" />
+         </children>
+      </Group>
+      <TextField fx:id="koefField1_2" layoutX="145.0" layoutY="129.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField2_2" layoutX="221.0" layoutY="129.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField3_2" layoutX="305.0" layoutY="129.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="koefField4_2" layoutX="412.0" layoutY="129.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField5_2" layoutX="492.0" layoutY="129.0" prefHeight="25.0" prefWidth="28.0" />
+      <Label layoutX="174.0" layoutY="133.0" text="CTG(X) +" />
+      <Label layoutX="249.0" layoutY="133.0" text="TGX)  +" />
+      <Label layoutX="355.0" layoutY="133.0" text="E^(X) +" />
+      <Label layoutX="445.0" layoutY="133.0" text="LG(X) +" />
+      <Label layoutX="527.0" layoutY="133.0" text="= 0 ;" />
+      <TextField fx:id="koefField1_3" layoutX="145.0" layoutY="163.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField2_3" layoutX="242.0" layoutY="163.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField3_3" layoutX="309.0" layoutY="163.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField4_3" layoutX="410.0" layoutY="163.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="koefField5_3" layoutX="521.0" layoutY="163.0" prefHeight="25.0" prefWidth="28.0" />
+      <Label layoutX="173.0" layoutY="167.0" text="  SIN(X)   +" />
+      <Label layoutX="271.0" layoutY="167.0" text="E^(X)+" />
+      <Label layoutX="337.0" layoutY="167.0" prefHeight="17.0" prefWidth="90.0" text="ARCSIN(X) +" />
+      <Label layoutX="445.0" layoutY="167.0" text="ARCCTG(X) +" />
+      <Label layoutX="551.0" layoutY="167.0" text="= 0 ;" />
+      <Label layoutX="661.0" layoutY="90.0" text="Введіть межі для вибраного рівняння:" />
+      <TextField fx:id="mezha_1" layoutX="714.0" layoutY="121.0" prefHeight="25.0" prefWidth="40.0" />
+      <TextField fx:id="mezha_2" layoutX="811.0" layoutY="121.0" prefHeight="25.0" prefWidth="41.0" />
+      <Label layoutX="678.0" layoutY="125.0" prefHeight="17.0" prefWidth="24.0" text="a : " />
+      <Label layoutX="786.0" layoutY="125.0" prefHeight="17.0" prefWidth="14.0" text="b :" />
+      <Label layoutX="676.0" layoutY="176.0" text="Введіть точність:" />
+      <TextField fx:id="tonchnist" layoutX="774.0" layoutY="172.0" prefHeight="25.0" prefWidth="84.0" />
+      <Label layoutX="52.0" layoutY="70.0" prefHeight="21.0" prefWidth="475.0" text="Виберіть один з трьох шаблонів та введіть коефіцієнти:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="217.0" prefHeight="31.0" prefWidth="413.0" text="Виберіть метод,яким хочете розв'язати рівняння:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Bisection" layoutX="58.0" layoutY="249.0" mnemonicParsing="false" text="Метод бісекції" />
+      <RadioButton fx:id="Hiyuton" layoutX="58.0" layoutY="277.0" mnemonicParsing="false" text="Метод Ньютона" />
+      <RadioButton fx:id="Sichnih" layoutX="58.0" layoutY="310.0" mnemonicParsing="false" text="Метод січних" />
+      <Button fx:id="keyButton" layoutX="225.0" layoutY="264.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="123.0" text="Розв'язати!">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="41.0" layoutY="345.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="306.0" text="Побудувати графік!" />
+      <Label layoutX="627.0" layoutY="197.0" prefHeight="39.0" prefWidth="167.0" text="Графік функції">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="424.0" text="X  = ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textRoz" layoutX="99.0" layoutY="425.0" prefHeight="25.0" prefWidth="110.0" promptText="Розв'язок" />
+      <Label layoutX="56.0" layoutY="400.0" prefHeight="20.0" prefWidth="239.0" text="Розв'язок цього рівняння:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="chart1" layoutX="461.0" layoutY="251.0">
+        <xAxis>
+          <NumberAxis fx:id="x" lowerBound="-10.0" side="LEFT" upperBound="30.0" />
+
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" lowerBound="-10.0" side="LEFT" upperBound="30.0" />
+        </yAxis>
+      </LineChart>
+      <NumberAxis fx:id="y1" layoutX="521.0" layoutY="715.0" lowerBound="-10.0" prefHeight="31.0" prefWidth="437.0" side="LEFT" upperBound="30.0" />
+   </children>
+</AnchorPane>
